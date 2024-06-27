@@ -1,3 +1,5 @@
+# 26/6/2024
+
 # name=['manu','akhil','abhi',25,30,35]
 # print(name)
 
@@ -57,12 +59,47 @@
 # l.reverse()
 # print(l)
 
+# 1.enter names into a list
 
 # a=int(input("Enter no. of students:"))
 # names=[]
 # for i in range(a):
-#     n=input("enter name:")
-#     names.append(n)
+#      n=input("enter name:")
+#      names.append(n)
 # print(names)  
 
+# 27/06/2024
+# 1.remove duplicate values from the list and print it
+
+# l=[1,2,3,1,2,3]
+# n=[]
+# for i in l:
+#  if i not in n:
+#       n.append(i)
+# print(n)
+
+# 2.reverse a list
+
+# l=['manu','hari','akhil']
+# n=''
+# for i in l:
+#      for j in i:
+#       n=j+n
+# print(n)
+
+
+# 3.add elements of a list
+l=[1,2,3,'abc',20.5]
+n=0
+m=0
+s=0
+for i in l:
+ if type(i)==int:
+      n+=i
+ elif type(i)==float:
+      n+=i 
+print(n)
+
+
+          
 

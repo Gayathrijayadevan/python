@@ -89,17 +89,15 @@
 
 
 # 3.add elements of a list
-l=[1,2,3,'abc',20.5]
-n=0
-m=0
-s=0
-for i in l:
- if type(i)==int:
-      n+=i
- elif type(i)==float:
-      n+=i 
-print(n)
-
-
+# l=[1,2,3,'abc',20.5]
+# n=0
+# for i in l:
+#  if type(i)==int:
+     #  n+=i
+#  elif type(i)==float:
+     #  n+=i 
+# print(n)
+# 
+# 
           
 

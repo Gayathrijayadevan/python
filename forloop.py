@@ -76,9 +76,91 @@
     #  3 4 5
     #  6 7 8
 
+# a=0
 # for i in range(3):
 #     for j in range(3):
-#         print(j,j+1,j+2)
+#         print(a,end='\t')
+#         a+=1
+#     print()
+
+# 28/06/2024
+
+#1. 0
+#   1 1
+#   2 2 2
+
+# for i in range(3):
+#     for j in range(i+1):
+    #     print(i,end='\t')
+    # print()    
+
+# 2.0
+#   0 1
+#   0 1 2
+
+# for i in range(3):
+#     for j in range(i+1):
+    #     print(j,end='\t')
+    # print()    
+
+# 3.0
+#   1 2
+#   3 4 5
+
+# a=0
+# for i in range(3):
+#     for j in range(i+1):
+    #       print(a,end='\t')
+    #       a+=1
+    # print()  
+
+# 4.0
+#   1 0
+#   2 1 0
+
+# for i in range(3):
+#     for j in range(i+1):
+        # print(i-j,end='\t')
+    # print()    
+
+# 5.A A A
+#   B B B
+#   C C C
+
+# a=65
+# for i in range(3):
+#     for j in range(3):
+#         print(chr(a),end='\t')
 #     print()    
+#     a+=1
 
+# 6. A B C
+#    A B C
+#    A B C
+   
+# a=65
+# for i in range(3):
+    # for j in range(3):
+        #  print(chr(a),end='\t')
+        #  
+    # print()    
 
+# 7. A B C   
+#    D E F 
+#    G H I
+
+# a=65
+# for i in range(3):
+#     for j in range(3):
+#         print(chr(a),end='\t')
+    #     a+=1
+    # print()    
+# 8.A
+#   B C
+#   D E F
+# a=65
+# for i in range(3):
+    # for j in range(i+1):
+        # print(chr(a),end='\t')
+        # a+=1
+    # print()    

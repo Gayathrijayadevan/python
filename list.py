@@ -98,6 +98,23 @@
      #  n+=i 
 # print(n)
 # 
-# 
+#29/06/2024 
+
+# 1.print the largest L=[1,2,10,20,35]
+ 
+# l=[1,2,10,20,35]
+# n=l[0]
+# for i in l:      
+#     if i>n:
+     #    n=i
+#    
+# print(" The largest number is:",n)  
+
+
+
+        
+
+
+
           
 

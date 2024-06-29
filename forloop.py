@@ -140,8 +140,8 @@
    
 # a=65
 # for i in range(3):
-    # for j in range(3):
-        #  print(chr(a),end='\t')
+    # for j in range(a,a+3):
+        # print(chr(j),end='\t')
         #  
     # print()    
 
@@ -164,3 +164,38 @@
         # print(chr(a),end='\t')
         # a+=1
     # print()    
+
+# 29/06/2024
+
+# 9.A
+#   B B
+#   C C C
+
+# a=65
+# for  i in range(3):
+#     for j in range(i+1):
+#         print(chr(a),end='\t')
+    # print()  
+    # a+=1 
+     
+# 10.A
+#    A B
+#    A B C
+
+# for i in range(3):
+    # a=65
+    # for j in range(i+1):
+        # print(chr(a),end='\t')
+        # a+=1
+    # print()  
+# 
+# 11.A      
+#    B A
+#    C B A
+
+# a=65
+# for i in range(3):
+    # for j in range(i+1):
+        # print(chr(a-j),end='\t')
+    # print()    
+    # a+=1

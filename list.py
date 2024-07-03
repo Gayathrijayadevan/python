@@ -110,6 +110,47 @@
 #    
 # print(" The largest number is:",n)  
 
+std=[]
+while True:
+     print("1.Add \n 2.display \n 3.update\n 4.delete \n 5.exit ")
+     a=int(input("enter your choice:"))
+     if a==1:
+          b=int(input ('enter number of students'))
+          for i in range(b):
+               name=input("Enter the name:")
+               age=int(input("Enter age:"))
+               class_name=input("Enter class:")
+               std.append([name,age,class_name])
+     elif a==2:
+          for i in std:
+               print("student details:")          
+               print(i)
+     elif a==3:
+          f=0
+          a_name=input("Enter a name:")    
+          for i in std:      
+               if a_name in i:
+                    age=int (input("Enter nwe age"))
+                    i[1]=age
+                    f=1
+          if f==0:
+               print("This student is not in the list")     
+     elif a==4:
+          aname=input("Enter the name") 
+          f=0         
+          for i in std:
+               if aname in i:
+                    std.remove(i)
+                    print(aname,"is deleted from the list")
+                    f=1
+          if f==0:
+               print("There is no such name ")          
+     elif a==5:
+          break               
+
+
+
+
 
 
         

@@ -33,3 +33,35 @@
     # fact=(fact*i)
     # i+=1
 # print("factorial of" ,a,"=",fact)
+
+# 4/06/2024
+
+# a='welcome'
+# l=len(a)
+# i=0
+# while i<l:
+    # print(a[i])
+    # i+=1
+
+# a='welcome'
+# l=len(a)
+# print(a[-7])
+# print(a[-6])
+# print(a[1])
+# print(a[0:5])
+# print(a[:6])
+# print(a[2:])
+
+# print(a[1:5:2])
+# print(a[:])
+# print(a[: :-1])
+# print(a[: :3])
+
+# a='welcome'
+# print(a.index("e"))
+# print(a.count('e'))
+
+# print(a.capitalize())
+
+
+

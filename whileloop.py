@@ -34,7 +34,7 @@
     # i+=1
 # print("factorial of" ,a,"=",fact)
 
-# 4/06/2024
+# 5/07/2024
 
 # a='welcome'
 # l=len(a)
@@ -57,11 +57,8 @@
 # print(a[: :-1])
 # print(a[: :3])
 
-# a='welcome'
-# print(a.index("e"))
-# print(a.count('e'))
 
-# print(a.capitalize())
+
 
 
 

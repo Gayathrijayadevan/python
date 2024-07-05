@@ -204,7 +204,8 @@
 # i=[1,2,3,4,5]
 # data=functools.reduce(lambda total,values:total*values,i)
 # print(data)
-# 
+
+
 
 
 

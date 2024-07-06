@@ -1,6 +1,7 @@
 import reg
 import display
-import update
+from update import *
+from delete import *
 dtl=[]
 while True:
     print("1.Add \n 2.Display \n 3.Update \n 4.Delete \n. 5.exit")
@@ -10,4 +11,8 @@ while True:
     elif ch==2:
         display.view(dtl)
     elif ch==3:
-        update.change(dtl)    
+        change(dtl)  
+    elif ch==4:
+        remove(dtl)
+    elif ch==5:
+        break

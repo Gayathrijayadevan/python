@@ -1,8 +1,6 @@
-seats = {
-    'A1': 'available', 'A2': 'available', 'A3': 'available', 'A4': 'available', 'A5': 'available',
+seats = {'A1': 'available', 'A2': 'available', 'A3': 'available', 'A4': 'available', 'A5': 'available',
     'B1': 'available', 'B2': 'available', 'B3': 'available', 'B4': 'available', 'B5': 'available',
-    'C1': 'available', 'C2': 'available', 'C3': 'available', 'C4': 'available', 'C5': 'available',
-}
+    'C1': 'available', 'C2': 'available', 'C3': 'available', 'C4': 'available', 'C5': 'available',}
 
 users = {'user1': 'password1','user2': 'password2','user3': 'password3'}
 
@@ -13,9 +11,9 @@ while True:
     print("3. Reserve a Seat")
     print("4. Exit")
 
-    ch = input("Enter your choice: ")
+    ch =int(input("Enter your choice: "))
 
-    if ch == '1':
+    if ch == 1:
         print("Enter username and password to login:")
         username = input("Username: ")
         password = input("Password: ")
@@ -23,41 +21,41 @@ while True:
             print("Login successful!")
             while True:
                 print("\nAvailable seats:")
-                for seat, status in seats.items():
-                    if status == 'available':
+                for seat in seats.keys():
+                    if seats.get(seat) == 'available':
                         print(seat)
-                seat_choice = input("Enter seat to reserve (e.g., A1), or type 'back' to go back: ")
+                seat_choice = input("Enter seat to reserve (e.g: A1), or type 'back' to go back: ")
                 if seat_choice.lower() == 'back':
                     break
                 if seats.get(seat_choice) == 'available':
                     seats[seat_choice] = 'reserved'
-                    print(f"Seat {seat_choice} reserved successfully!")
+                    print("Seat",seat_choice," reserved successfully!")
                 else:
-                    print(f"Seat {seat_choice} is not available.")
+                    print("Seat",seat_choice," is not available.")
         else:
             print("Login failed. Invalid username or password.")
 
-    elif ch == '2':
+    elif ch == 2:
         print("Enter new username and password to register:")
         new_username = input("Username: ")
         new_password = input("Password: ")
         users[new_username] = new_password
         print("Registration successful!")
 
-    elif ch== '3':
+    elif ch == 3:
         print("\nAvailable seats:")
-        for seat, status in seats.items():
-            if status == 'available':
+        for seat in seats.keys():
+            if seats.get(seat) == 'available':
                 print(seat)
-        seat_choice = input("Enter seat to reserve (e.g., A1): ")
+        seat_choice = input("Enter seat to reserve(eg:'B4') : ")
         if seats.get(seat_choice) == 'available':
             seats[seat_choice] = 'reserved'
-            print(f"Seat {seat_choice} reserved successfully!")
+            print("Seat",seat_choice," reserved successfully!")
         else:
-            print(f"Seat {seat_choice} is not available.")
+            print("Seat", seat_choice," is not available.")
 
-    elif ch == '4':
-        print("Thank you for using the Seat Reservation System. Goodbye!")
+    elif ch == 4:
+        print("Thank you for using the Seat Reservation System. Goodbye")
         break
 
     else:

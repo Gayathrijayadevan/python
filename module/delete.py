@@ -1,7 +1,9 @@
 def remove(dtl):
-    a_id=input("enter student id:")
-    f=0
+    id=int(input("enter student id to be deleted:"))
     for i in dtl:
-        if a_id in dtl:
-            a_key=input("enter the you want to delete:")
-            i.pop(a_key)
+        if i["id"]==id:
+            dtl.remove(i)
+            print("The profile has been  deleted")
+            break
+        else:
+            print("invalid id")        

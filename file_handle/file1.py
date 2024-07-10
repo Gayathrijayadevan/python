@@ -1,3 +1,5 @@
+# 8/07/2024
+
 # f=open('python/file_handle/new.txt','x')
 # f.write('welcome all')
 

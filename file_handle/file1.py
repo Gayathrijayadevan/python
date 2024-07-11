@@ -30,6 +30,77 @@
 #     a-=1
 #     f.write('\n')
 
+# 11/07/2024
+
+# f=open("python/file_handle/new.txt","a")
+# f.write("to python")
+
+# f=open("python/file_handle/new.txt","r")
+# print(f.read())
+
+# f=open("python/file_handle/new.txt","r")
+# print(f.read(5))
+# print('_'*20)
+# print(f.read(5))
+
+# f=open("python/file_handle/new.txt","r")
+# print(f.readline(5))
+# print('_'*20)
+# print(f.readline(3))
+# print(f.readline())
+
+# f=open("python/file_handle/new.txt","r")
+# print(f.readlines())
+# print('_'*20)
+
+# f=open("python/file_handle/new.txt","r")
+# l=len(f.readlines())
+# f.seek(0)
+# for i in range(l):
+#     a=f.readline().strip()
+#     print(a[::-1])
+
+# f=open("python/file_handle/new.txt","r")
+# l=len(f.readlines())
+# f.seek(0)
+# word=0
+# for i in range(l):
+#     a=f.readline().strip()
+#     for j in a:
+#         if j==' ':
+#             word+=1
+#     word+=1
+# print(word)    
+
+f=open("python/file_handle/new.txt","r")
+l=len(f.readlines())
+f.seek(0)
+word=0
+let=0
+cap=0
+for i in range(l):
+    a=f.readline().strip()
+    for j in a:
+        if j==' ':
+            word+=1
+        else:
+            let+=1
+            if j.isupper():
+                cap+=1   
+            
+    word+=1
+print('words=',word) 
+print('letters=',let)
+print('capital letters=',cap)
+print('small letters=',let-cap)
+   
+
+
+
+
+
+
+
 
 
 

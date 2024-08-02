@@ -12,11 +12,15 @@ def data():
     # messagebox.askretrycancel("display",v1.get())
     # messagebox.askyesnocancel("display",v1.get())
     # messagebox.askokcancel("display",v1.get())
-    if v_c1.get()==1:
-        print("malayalam selected")
-    if v_c2.get()==1:
-        print("english selected")
-    print(vr1.get())    
+    # if v_c1.get()==1:
+        # print("malayalam selected")
+    # if v_c2.get()==1:
+        # print("english selected")
+    # print(vr1.get())    
+    if vr1.get()==1:
+        print("male")
+    if vr1.get()==2:
+        print("female")  
 
 app.title("synnfeo")  #to add app title
 app.minsize(400,400)  #to specify min & max size
@@ -30,16 +34,19 @@ v1=tkinter.StringVar()
 e1=tkinter.Entry(app,textvariable=v1)  #to add an entry box
 e1.pack()
 
-v_c1=tkinter.IntVar()
-v_c2=tkinter.IntVar()
-c1=tkinter.Checkbutton(app,text="mal",variable=v_c1)  #to add checkbox
-c1.pack()
-c2=tkinter.Checkbutton(app,text="eng",variable=v_c2)
-c2.pack()
+# v_c1=tkinter.IntVar()
+# v_c2=tkinter.IntVar()
+# c1=tkinter.Checkbutton(app,text="mal",variable=v_c1)  #to add checkbox
+# c1.pack()
+# c2=tkinter.Checkbutton(app,text="eng",variable=v_c2)
+# c2.pack()
 
-r1=tkinter.Radiobutton(app,text="male",variable=vr1)
-r2=tkinter.Radiobutton(app,text="female",variable=vr1)
 vr1=tkinter.IntVar()
+r1=tkinter.Radiobutton(app,text="male",value=1,variable=vr1)
+r2=tkinter.Radiobutton(app,text="female",value=2,variable=vr1)
+r1.pack()
+r2.pack()
+
 
 b1=tkinter.Button(app,text="save",bg="black",fg="white",activebackground="blue",activeforeground="white",padx=10,pady=10,command=data)  #to add a button 
 # a function is also added to this to save the value entered in entry box whwn thw button is clicked
